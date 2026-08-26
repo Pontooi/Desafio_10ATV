@@ -1,0 +1,99 @@
+// 1 - Operações com dois números
+let num1 = 10;
+let num2 = 5;
+
+let soma = num1 + num2;
+let subtracao = num1 - num2;
+let multiplicacao = num1 * num2;
+let divisao = num1 / num2;
+
+console.log("Soma:", soma);
+console.log("Subtração:", subtracao);
+console.log("Multiplicação:", multiplicacao);
+console.log("Divisão:", divisao);
+
+// 2 - Maior ou menor de idade
+let idade = 20;
+
+if (idade >= 18) {
+    console.log("Você é maior de idade!");
+} else {
+    console.log("Você é menor de idade!");
+}
+
+// 3 - Conceito da nota
+let nota = 8.5;
+
+if (nota >= 9) {
+    console.log("Conceito: A");
+} else if (nota >= 7) {
+    console.log("Conceito: B");
+} else if (nota >= 5) {
+    console.log("Conceito: C");
+} else {
+    console.log("Conceito: D");
+}
+
+// 4 - Números de 1 a 10
+for (let i = 1; i <= 10; i++) {
+    console.log(i);
+}
+
+// 5 - Números de 10 a 1
+let i = 10;
+
+while (i >= 1) {
+    console.log(i);
+    i--;
+}
+
+// 6 - Soma de 1 a 100
+let soma = 0;
+
+for (let i = 1; i <= 100; i++) {
+    soma += i;
+}
+
+console.log("Soma de 1 a 100:", soma);
+
+// 7 - Lista de Cores
+let cores = ["Vermelho", "Azul", "Verde", "Amarelo"];
+
+for (let i = 0; i < cores.length; i++) {
+    console.log(cores[i]);
+}
+
+// 8 - Dobro de um número
+function dobro(numero) {
+    return numero * 2;
+}
+
+console.log(dobro(5));
+console.log(dobro(7));
+
+// 9 - Par ou Ímpar
+function parOuImpar(numero) {
+    if (numero % 2 === 0) {
+        return "Par";
+    } else {
+        return "Ímpar";
+    }
+}
+
+console.log(parOuImpar(4));
+console.log(parOuImpar(7));
+
+// 10 - Soma de um array
+function somaArray(array) {
+    let soma = 0;
+    
+    for (let i = 0; i < array.length; i++) {
+        soma += array[i];
+    }
+    
+    return soma;
+}
+
+console.log(somaArray([1, 2, 3, 4]));
+console.log(somaArray([10, 20, 30]));
+
